@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Red Hat Display', sans-serif;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1080px];
+    }
+}
+#burger-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #000;
+    transition: .2s all ease;
+}
+
+#burger-btn.active span:nth-child(1){
+    transform: rotate(45deg) translateY(5px);
+}
+#burger-btn.active span:nth-child(2){
+    display: none;
+}
+#burger-btn.active span:nth-child(3){
+    transform: rotate(-45deg) translateY(-5px);
+}

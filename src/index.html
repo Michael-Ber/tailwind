@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <title>TAILWIND CSS PROJECT</title>
+</head>
+<body>
+    <header class="pt-10">
+        <div class="container">
+            <nav class="relative flex justify-between items-center">
+                <div class="cursor-pointer">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </div>
+                <ul class="flex items-center gap-12 md:hidden">
+                    <li><a href="#" class="text-xl font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">About</a></li>
+                    <li><a href="#" class="text-xl font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">Services</a></li>
+                    <li><a href="#" class="text-xl font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">Case Studies</a></li>
+                    <li><a href="#" class="text-xl font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">Careers</a></li>
+                    <li><a href="#" class="text-xl font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">Blog</a></li>
+                </ul>
+
+                <ul id="menu" class="hidden w-full absolute left-0 right-0 top-10 flex-col items-center bg-lightred p-4 gap-5 text-center">
+                    <li><a href="#" class="text-xl text-white font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">About</a></li>
+                    <li><a href="#" class="text-xl text-white font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">Services</a></li>
+                    <li><a href="#" class="text-xl text-white font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">Case Studies</a></li>
+                    <li><a href="#" class="text-xl text-white font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">Careers</a></li>
+                    <li><a href="#" class="text-xl text-white font-medium transition-colors duration-200 hover:text-lightred lg:text-lg md:text-base">Blog</a></li>
+                </ul>
+
+                <button id="burger-btn" class="cursor-pointer hidden md:block">
+                    <span class="mb-1"></span>
+                    <span class="mb-1"></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>    
+
+    <main>
+        <section class="here pt-[113px]">
+            <div class="container">
+                <h1 class="text-5xl font-black text-center max-w-[610px] mx-auto leading-[65px] tracking-[-1.5px] md:text-3xl sm:text-xl">
+                    Grow your business online. Get. More. Leads.
+                </h1>
+                <h2 class="max-w-[575px] text-xl font-normal tracking-custonNarrow text-center mx-auto mt-5 md:text-lg sm:text-base">
+                    Wanna get serious into digital marketing? Then you need leads and this is where we can help you.
+                </h2>
+                <div class="flex gap-7 justify-center items-center mt-8 sm:flex-col">
+                    <button class="w-40 h-12 text-xl text-white tracking-custonNarrow bg-lightred rounded-2xl">Start here.</button>
+                    <button class="w-40 h-12 text-xl text-lightred tracking-custonNarrow border-lightred border-2 rounded-2xl">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about pt-40 pb-32 lg:pt-32 lg:pb-24 md:pt-20 md:pb-14 sm:pt-10 sm:pb-10">
+            <div class="container flex justify-between items-start gap-28 lg:flex-col lg:gap-10">
+                <div class="w-1/2 lg:w-full">
+                    <p class="text-xl font-bold tracking-custonNarrow text-middlered lg:text-center">about us</p>
+                    <h2 class="text-4xl font-black tracking-[-1.08px] lg:text-center md:text-2xl sm:text-lg">The team behind the brand.</h2>
+                    <p class="text-lg font-normal leading-normal mt-2 md:text-base sm:text-sm">Proin elementum fermentum auctor. Nulla semper, est eget congue pellentesque, erat nulla molestie mi, in finibus leo nisl ac lectus. Praesent non urna. Nulla congue porta lectus in laoreet. Aenean pellentesque vitae metus id porttitor.t</p>
+                    <button class="w-40 h-12 text-xl block tracking-custonNarrow text-white bg-lightred rounded-2xl mt-5 mx-auto">Learn More</button>
+                </div>
+                <div class="w-1/2 lg:w-full">
+                    <img src="./assets/img/people.jpg" alt="about us" class="lg:mx-auto">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-customgray pt-20 pb-24">
+        <div class="container flex items-start gap-40 lg:gap-30 md:gap-20 sm:gap-10 sm:flex-col">
+            <div class="flex flex-col items-start w-1/3 lg:w-1/2 sm:w-full">
+                <div class="cursor-pointer">
+                    <img src="./assets/img/logo-white.svg" alt="logo">
+                </div>
+                <p class="text-xl text-white tracking-custonNarrow mt-5">
+                    Sign up for our newsletter to get latest news from us
+                </p>
+                <form action="#" class="flex flex-col items-start mt-3 sm:w-full">
+                    <input 
+                        type="text" 
+                        placeholder="Enter your email" 
+                        class="pl-4 placeholder:text-xl placeholder:italic placeholder:text-customgray tracking-custonNarrow h-12 w-80 bg-lightgray rounded-xl md:w-48 sm:w-full text-white text-xl border-[1px] border-[#595959]">
+                    <button type="submit" class="w-40 h-12 text-xl block tracking-custonNarrow text-white bg-lightred rounded-2xl mt-5 sm:mx-auto">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="w-1/3 lg:w-1/2 sm:w-full sm:text-center">
+                <span class="text-lightred text-xl font-medium tracking-custonNarrow">Jump to</span>
+                <ul class="mt-5 space-y-3">
+                    <li><a href="#" class="text-white text-xl font-medium tracking-custonNarrow transition-colors duration-200 hover:text-lightred">About</a></li>
+                    <li><a href="#" class="text-white text-xl font-medium tracking-custonNarrow transition-colors duration-200 hover:text-lightred">Contact</a></li>
+                    <li><a href="#" class="text-white text-xl font-medium tracking-custonNarrow transition-colors duration-200 hover:text-lightred">Services</a></li>
+                    <li><a href="#" class="text-white text-xl font-medium tracking-custonNarrow transition-colors duration-200 hover:text-lightred">Case Studies</a></li>
+                    <li><a href="#" class="text-white text-xl font-medium tracking-custonNarrow transition-colors duration-200 hover:text-lightred">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
